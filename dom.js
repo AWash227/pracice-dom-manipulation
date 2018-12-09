@@ -40,6 +40,10 @@ container.appendChild(redP);
 container.appendChild(blueH);
 container.appendChild(sDiv);
 
+const buttons = document.querySelectorAll('button');
 
-var btn = document.querySelector('#btn');
-btn.onclick = () => alert("You clicked the button");
+buttons.forEach((button) => {
+    button.addEventListener('click', (e) =>{
+        alert(button.id);
+    });
+});
